@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Nivell 03 Bootstrap</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/noanoaLogo.png" rel="icon">
+  <link href="assets/img/noanoaLogo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Groovin - v2.2.1
+  * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/noanoaLogo.png" alt="" class="img-fluid"></a>
+
+      <h6 class="logo mr-auto"><a href="index.html">No'a No'a Barcelona</a></h6>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#whyUs">Why us</a></li>
+          <li><a href="#teacher">Joss Daza</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <button type="button" class="btn get-started-btn" data-toggle="modal" data-target="#LoginModal"
+        data-backdrop="true">
+        Login
+      </button>
+
+      <button type="button" class="btn get-started-btn" data-toggle="modal" data-target="#RegistreModal"
+        data-backdrop="true">
+        Register
+      </button>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ///// Modal Login ///// -->
+  <div class="modal fade" id="LoginModal">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <!-- Header -->
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+
+        <!-- Body -->
+
+        <div class="modal-body">
+
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="col">
+                <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+              </div>
+            </div>
+          </form>
+
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ///// Modal Registre ///// -->
+  <div class="modal fade" id="RegistreModal">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <!-- Header -->
+
+        <div class="modal-header">
+
+          <h4 class="modal-title">Register</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+
+        <!-- Body -->
+
+        <div class="modal-body">
+
+          <form>
+
+            <div class="form-row">
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+
+            </div>
+
+            <div class="form-row mt-2 mb-2">
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="City or Country">
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="col">
+                <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary mx-auto">Create Account</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/slide/Slide01.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Learn Ori Tahiti</h2>
+                <p class="animate__animated animate__fadeInUp">Get into the Polynesian culture.</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/Slide02.jpg);">
+            <div class="carousel-container ">
+              <div class="carousel-content ">
+                <h2 class="animate__animated animate__fadeInDown">Learn Hula</h2>
+                <p class="animate__animated animate__fadeInUp">Dive into the Hawaiian culture.</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/Slide03.jpg);">
+            <div class="carousel-background"><img src="assets/img/slide/Slide03.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Start as a begginer</h2>
+                <p class="animate__animated animate__fadeInUp">You'll have all the theory in one place. Practice the
+                  steps and put yourself to the test.</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/Slide06.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Finish as an advanced dancer</h2>
+                <p class="animate__animated animate__fadeInUp">Participate in the end of the year festival.</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>HOW IT WORKS</h3>
+              <p>
+                Our online courses are easy to follow. If you're interested in the polynesian culture, or simply want to
+                add high cardio exercices into your routines, don't think it over and book one of our courses!
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box">
+                  <i class="bx bx-book"></i>
+                  <h4>THEORY</h4>
+                  <p>Dive into the polynesian culture. Learn the basic concepts and steps, and up your level with every
+                    lesson</p>
+                </div>
+                <div class="col-md-6 icon-box">
+                  <i class="bx bx-music"></i>
+                  <h4>PRACTICE</h4>
+                  <p>Put in practice what you've learned and improve your technique, resistance and flexibility.</p>
+                </div>
+                <div class="col-md-6 icon-box">
+                  <i class="bx bx-camera-movie"></i>
+                  <h4>TEST</h4>
+                  <p>At the end of each lesson, test your skills doing a series of exercices designed by your tutor. Record it and upload it.</p>
+                </div>
+                <div class="col-md-6 icon-box">
+                  <i class="bx bx-message-detail"></i>
+                  <h4>FEEDBACK</h4>
+                  <p>Get feedback from a professional dancer, who will analyse your moves and give you tips.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">268</span>
+              <p><strong>Happy Students</strong> have already taken some course with us</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">50</span>
+              <p><strong>Presentations</strong> about the polynesian culture you can download and keep</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">300</span>
+              <p><strong>Dancers</strong> have joined our discord channel</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">10</span>
+              <p><strong>Festivals</strong> we have participated in as a school</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Start a Course Section ======= -->
+    <section id="whyUs" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>WHY START A COURSE</h2>
+          <p>These are the main reasons to start a course with us, and there are many more!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-home"></i></div>
+            <h4 class="title"><a href="">Flexibility</a></h4>
+            <p class="description">Learn at your own peace and wherever you like. You just need 2m2 and motivation!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-certificate"></i></div>
+            <h4 class="title"><a href="">Professional tips</a></h4>
+            <p class="description">Submit your test videos and get feedback and tips from a professional dancer to
+              progress.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-heart-beat-alt"></i></div>
+            <h4 class="title"><a href="">Health</a></h4>
+            <p class="description">Dancing is an excellent way of maintaining both your physical and mental health in
+              great shape.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-read-book"></i></div>
+            <h4 class="title"><a href="">Knowledge</a></h4>
+            <p class="description">Get into the polynesian culture and learn all about their traditions, as well as how
+              they express through dancing.</p>
+            <!-- presentation -->
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-earth"></i></div>
+            <h4 class="title"><a href="">Network</a></h4>
+            <p class="description">We have a discord channel where we share interesting content, and share our tips.
+              Socialize with dancers from around the globe.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box">
+            <div class="icon"><i class="icofont-simple-smile"></i></div>
+            <h4 class="title"><a href="">Fun</a></h4>
+            <p class="description">Don't forget to have fun, it's the most important reason why we dance!</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>OUR STUDENTS SAY</h2>
+          <p>The most convincing opinions are the ones from our students. That's why we've collected some for you:</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>Joy Ngo</span>
+              <h4>Ori Tahiti & Hula</h4>
+              <p>I love dancing Ori and Hula. It takes me to the Polynesia and I connect with
+                myself and the earth in a different level</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>Sara Pascual</span>
+              <h4>Ori Tahiti</h4>
+              <p>I started dancing thanks to a friend and it has opened up a new world for me!
+                Totally reccommended!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>Emma Bona</span>
+              <h4>Hula</h4>
+              <p>Ever since I was a kid and I watched Lilo & Stitch I knew one day I'd dance Hula like them! I can't
+                wait to travel to Hawai'i!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Teacher Section ======= -->
+    <section id="teacher" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Joss Daza & No'a No'a Barcelona</h2>
+          <p>No'a no'a Barcelona  (El aroma de Barcelona en Tahitiano). Noa, también significa libertad en Hawaiano. 
+          <p>Noa noa fue como llamó a su diario de viaje  el pintor posimpresionista  Paul Gauguin cuándo visitó las
+            islas del Sur.</p>
+          <p>
+            Él decía que las islas tenían el aroma de las mujeres: perfume mezclado de animales, plantas, feminidad y el
+            aroma de tiare de sus cabellos.</p>
+          <p>Noa Barcelona es el aroma que surge de la mezcla  de la esencia de cada integrante del grupo, es justo un diario de viaje que puede ofrecer el recorrido de la danza a partir de la cultura Polinesia.</p>
+          <p>Es también cómo lo dice en Hawaiano, sentir la libertad que ofrece el movimiento. Ven a aprender con No'a No'a Barcelona y forma parte de ésta bella esencia.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/team/Joss04.JPG" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Donde nace la pasión</h4>
+                  <span>Joss Daza, originaria de Ciudad de México, cuenta con una trayectoria de alrededor de diecisiete años practicando principalmente Hula y Ori Tahiti. Migra a Barcelona en 2015 y Funda No'a  No'a Barcelona 2 años después, al comenzar a madurar el proyecto.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/team/Joss02.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Relación con la danza</h4>
+                  <span>"Migrar es un movimiento no solamente externo, si no también movimiento interno. Mueve tus bases más profundas  y produce al igual que la danza buscar los puntos más importantes para mantener el  equilibrio. La danza ha sido mi mejor y más fiel compañera de vida. Siempre me enseña algo nuevo, siempre me permite encontrar nuevos caminos, me busca un espacio y me ha permitido conocer de una manera más auténtica a diferentes personas a lo largo de éstos años.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="assets/img/team/Joss03.JPG" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Trayectoria</h4>
+                  <span>Comenzó su formación en Ballet Polinesio Bali, a cargo de la reconocida directora Clara Snell. Allí sembraron la pasión por la cultura Polinesia, bajo un trabajo arduo y constante durante 9 años,  además de tener oportunidad de formar parte de proyectos a nivel Nacional a lo largo de la República Mexicana  e Internacional, cómo el Tahiti Fete 2006 en Hilo Hawaii, obteniendo el primer lugar en grupo en categoría 'Aparima y ote'a. </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="assets/img/team/Joss01.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Continua el camino</h4>
+                  <span>Posteriormente continua su formación en  la Universidad del Valle de México, Campus Lomas Verdes, donde le ofrecen una beca por ser parte del grupo representativo de Danza Polinesia, a cargo de la profesora Denisse Suárez, teniendo oportunidad de pisar escenarios  en distintas partes de la República Mexicana. Comienza a impartir talleres a nivel infantil en la Casa de Cultura de Atizapán de Zaragoza y distintos colegios.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="courses" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Courses</h2>
+          <p>We currently have 3 online courses, and we offer additional services as well, such as Workshops, or shows
+            for events (corporate and social).</p>
+          <p> If what you're looking for is not right below, get in touch so we can talk about it together!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box recommended recommendedA">
+              <h3>Ori Tahiti Begginers</h3>
+              <h4><sup>€</sup>40<span> / month</span></h4>
+              <ul>
+                <li>Grab your pareo and you're ready to go! (did you know the word "pareu" has a Tahitian origin?).</li>
+                <li>Learn much more from the imponent island percussion, dare to awake your movements inspired by
+                  nature, and elevate your energy and sensuality.</li>
+                <li>Learn the origin of the dance of Tahiti.</li>
+                <li>Get to know the basic instruments.</li>
+                <li>Familiarise with the basic Ori Tahiti steps.</li>
+                <li>Download a music folder to use on your rehearsals.</li>
+                <li>The main goal is to get introduced into a new culture and exercice while you learn new movements.
+                  The only things you need are the pareo and a shirt. Nothing else, you'll dance bare foot.</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended recommendedB">
+              <h3>Ori Tahiti Advanced</h3>
+              <h4><sup>€</sup>40<span> / month</span></h4>
+              <ul>
+                <li>Did you fall in love with the polynesian culture and want some more?</li>
+                <li>Whether you want to keep learning about the culture, the dance, perfectionate the technique or just
+                  want to have some more fun, this course is what you need.</li>
+                <li>Download a music folder to use on your rehearsals.</li>
+                <li>The main goal is to keep growing as a dancer as well as improving your skills.</li>
+                <li>Remember, the only things you need are the pareo and a shirt. Nothing else, you'll dance bare foot.
+                </li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box recommended recommendedC">
+              <h3>Hula</h3>
+              <h4><sup>€</sup>40<span> / month</span></h4>
+              <ul>
+                <li>Curious about the Hawaiian culture? This course is for you!</li>
+                <li>Learn all about the elegance, beauty and deepness of each Hula movement.</li>
+                <li>Get transported to the islands while moving at its peaceful movements.</li>
+                <li>Download a music folder to use on your rehearsals.</li>
+                <li>To start you'll need a long skirt if you don't have a pa'u, and a shirt. Nothing else, you'll dance
+                  bare foot.</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Most likely you have a question someone has asked us in the past, so we'll try to resolve the main doubts
+            here, but if you have another question, please do not hesitate to get in touch.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
+                href="#faq-list-1">Are the courses online or in person?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Currently all the courses are online, except if you live in Barcelona. At the moment we're doing Hula
+                  on Wednesday at 19h, and Ori on Thursday at 19h30 at the Lavandula Espai in Lesseps. </p>
+                <p>If you're interested in presencial classes, please get in touch so we can arrange it.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                class="collapsed">How do I start a course?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>We try to keep it simple:</p>
+                <p> <b>1.</b>Decide which course you want to do.</p>
+                <p> <b>2.</b>Purchase it (Currently we accept Bizum or bank transfers.).</p>
+                <p> <b>3.</b>Login to your student page.</p>
+                <p> <b>4.</b>Download the music folder so it's always available to you.</p>
+                <p> <b>5.</b>Select the course.</p>
+                <p> <b>6.</b>Read each lesson (you can download the presentations).</p>
+                <p> <b>7.</b>Practice twice a week.</p>
+                <p> <b>8.</b>Film yourself doing the test exercices.</p>
+                <p> <b>9.</b>Upload the video into the drive we'll tell you.</p>
+                <p> <b>10.</b>Receive feedback in a few days from the teacher and keep practicing.</p>
+                <p> <b>Bonus.</b>Make sure you're into the discord channel to keep in touch with other students.</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
+                class="collapsed">What equipment do I need exactly?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  <b>
+                    For Ori Tahiti:</b> a pareo (long or short, we'll teach you how to tie them both) and a comfy shirt.
+                  Optional: get a strength belt (we'll also show you how to make one, it's super easy and will make you
+                  even stronger!)
+                </p>
+                <p>
+                  <b>For Hula:</b> a pa'u (or a long skirt) and a comfy shirt.
+                </p>
+                <p>
+                  <b>For both: </b>a bottle of water, a towel for your sweat.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
+                class="collapsed">How do I know which level do I have?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  If it's your first time learning a dance with advanced hip movements, choose the begginner level. If
+                  you've danced bellydancing or a similar style, I'd still reccommend the begginners, but we can talk
+                  about it to decide which one is better for you. I want you to make the most out of your time, so it's
+                  important that you choose well.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
+                class="collapsed">Can I hire you for an event?<i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Absolutely! If you're planning an event, whether it's social or work event, we can come and dance both
+                  Ori Tahiti and Hula and impress all your guests. Get in touch and we can discuss the details.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you have any questions we haven't responded yet, or if you just want to say Hi, drop us a line and we'll
+            be happy to talk with you.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="icofont-google-map"></i>
+              <h3>Lavàndula Espai d’Art</h3>
+              <address>Carrer de la Mare de Déu del Coll, 43, local, 08023 Barcelona</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="icofont-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+34645309228">+34 645 68 9228</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="icofont-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:noanoanobarcelona@gmail.com">noanoanobarcelona@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>No'a No'a Barcelona</h3>
+              <p>
+                <strong>Phone:</strong> +34 645 68 9228<br>
+                <strong>Email:</strong> noanoanobarcelona@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/noanoanobarcelona/?epa=SEARCH_BOX" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/noanoabarcelona/" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCBzu2XfREDUzZmoOFxaNnmQ/featured" class="google-plus"><i
+                    class="bx bxl-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#whyUs">Why Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#courses">Courses</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Legal</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms & Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Site Map</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>If you want to receive occasional news of new courses or special events, let us know and we'll keep you
+              updated.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Groovin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
