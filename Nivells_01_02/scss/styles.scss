@@ -1,0 +1,16 @@
+// Bootstrap 4
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "functions";
+@import "variables";
+@import "mixins";
+
+// Optional
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
